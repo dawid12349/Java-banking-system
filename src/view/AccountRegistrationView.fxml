@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AccountRegistrationViewController">
+   <children>
+      <Button fx:id="goBackButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onGoBack" text="&lt;- Go back" />
+      <Label layoutX="157.0" layoutY="8.0" prefHeight="38.0" prefWidth="316.0" text="Register new client's account:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="submitButton" layoutX="219.0" layoutY="349.0" mnemonicParsing="false" onAction="#onSubmit" text="Submit">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="resetButton" layoutX="310.0" layoutY="349.0" mnemonicParsing="false" onAction="#onReset" prefHeight="39.0" prefWidth="79.0" text="Reset">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <VBox layoutX="128.0" layoutY="60.0" prefHeight="230.0" prefWidth="172.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="158.0" text="Name:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameTextField" prefHeight="25.0" prefWidth="91.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label prefHeight="27.0" prefWidth="158.0" text="Surname:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="surnameTextField" prefHeight="25.0" prefWidth="158.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label prefHeight="27.0" prefWidth="158.0" text="Email:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emailTextField" prefHeight="25.0" prefWidth="158.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label prefHeight="27.0" prefWidth="158.0" text="Pesel:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="peselTextField" prefHeight="23.0" prefWidth="172.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </VBox>
+      <VBox layoutX="310.0" layoutY="60.0" prefHeight="230.0" prefWidth="172.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="157.0" text="Telephone-number:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="telephoneNumberTextField" prefHeight="25.0" prefWidth="158.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label prefHeight="27.0" prefWidth="158.0" text="Country:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="countryTextField">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <Label prefHeight="27.0" prefWidth="158.0" text="City:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cityTextField">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <Label prefHeight="27.0" prefWidth="158.0" text="Street-address:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="streetTextField" prefHeight="4.0" prefWidth="172.0">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+         </children>
+      </VBox>
+      <TextField fx:id="balanceTextField" layoutX="310.0" layoutY="300.0" prefHeight="19.0" prefWidth="172.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="128.0" layoutY="301.0" prefHeight="27.0" prefWidth="158.0" text="Balance:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

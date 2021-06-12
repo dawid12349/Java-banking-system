@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AccountDisplayViewController">
+   <children>
+      <Button fx:id="goBackButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onGoBack" text="&lt;- Go Back" />
+      <Label layoutX="194.0" layoutY="9.0" text="Search for accounts:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="158.0" layoutY="69.0" text="Pick a criterium:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="173.0" layoutY="102.0" text="Enter a value:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchTextField" layoutX="300.0" layoutY="99.0" prefHeight="25.0" prefWidth="150.0" />
+      <ComboBox fx:id="comboBox" layoutX="300.0" layoutY="66.0" onAction="#comboBoxChoiceEvent" prefWidth="150.0" />
+      <Button fx:id="searchButton" layoutX="457.0" layoutY="99.0" mnemonicParsing="false" onAction="#onSearch" text="search">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <TableView fx:id="dataTable" layoutX="16.0" layoutY="135.0" prefHeight="253.0" prefWidth="569.0">
+        <columns>
+          <TableColumn fx:id="IDColumn" prefWidth="58.0" text="ID" />
+          <TableColumn fx:id="nameColumn" prefWidth="108.0" text="NAME" />
+            <TableColumn fx:id="surnameColumn" minWidth="8.0" prefWidth="106.0" text="SURNAME" />
+            <TableColumn fx:id="peselColumn" prefWidth="114.0" text="PESEL" />
+            <TableColumn fx:id="addressColumn" prefWidth="182.0" text="ADDRESS" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
